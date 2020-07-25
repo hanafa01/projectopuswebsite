@@ -56,6 +56,25 @@ hr{
 }
 
 
+@media only screen and (max-width: 300px) and (orientation: portrait) {
+  .b-text {
+      margin-top: -52px;
+      margin-left: -261px;
+      color: black;
+  }
+  .b2-text {
+      margin-top: -52px;
+      margin-left: -338px;
+      color: black;
+  }
+  .b3-text {
+      margin-top: -52px;
+      margin-left: -232px;
+      color: black;
+  }
+}
+
+
 @media (max-width: 500px) {
   .b-text {
       margin-top: -52px;
