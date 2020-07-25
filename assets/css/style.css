@@ -1,0 +1,116 @@
+.bg-light {
+    background-color: initial !important;
+}
+
+#main {
+    background: #004080;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin-left: 215px;
+}
+
+.site-logo {
+    width: 175px;
+}
+
+.round {
+    border: 1px solid;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+.welcome {
+    color: white;
+    text-align: right;
+}
+
+.bordr{
+    margin-left: -17px;
+    margin-top: 27px;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 6px solid #fff;
+    width: 200px;
+}
+
+.project {
+    color: white;
+}
+
+.dec  {
+    color: white;
+}
+
+.ex {
+    background-color: initial;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+
+.tet-con {
+    padding-top: 90px;
+    padding-bottom: 190px;
+}
+
+.lgone-img {
+    width: 100px;
+}
+
+.lgtwo-img {
+    width: 175px;
+    margin-left: 20px;
+}
+
+.lgthree-img {
+    width: 196px;
+    margin-left: 20px;
+}
+
+.brand {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#footer {
+   background: #004080;
+   padding-top: 70px;
+   padding-bottom: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .lgthree-img {
+        width: 148px;
+        margin-left: 20px;
+    }
+    .lgtwo-img {
+        width: 126px;
+        margin-left: 20px;
+    }
+    .lgthree-img {
+        width: 148px;
+        margin-left: 20px;
+    }
+
+}
