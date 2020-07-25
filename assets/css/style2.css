@@ -56,10 +56,10 @@ hr{
 }
 
 
-@media only screen and (max-width: 300px) and (orientation: portrait) {
+@media only screen and (max-width: 400px) and (orientation: portrait) {
   .b-text {
-      margin-top: -52px;
-      margin-left: -261px;
+      margin-top: -30px;
+      margin-left: 0px;
       color: black;
   }
   .b2-text {
