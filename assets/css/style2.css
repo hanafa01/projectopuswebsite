@@ -77,17 +77,17 @@ hr{
 @media (max-width: 549px) {
   .b-text {
       margin-top: -52px;
-      margin-left: -156px;
+      margin-left: -109px;
       color: black;
   }
   .b2-text {
       margin-top: -52px;
-      margin-left: -245px;
+      margin-left: -193px;
       color: black;
   }
   .b3-text {
       margin-top: -52px;
-      margin-left: -142px;
+      margin-left: -84px;
       color: black;
   }
 }
