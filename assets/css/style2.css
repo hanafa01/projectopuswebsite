@@ -56,39 +56,20 @@ hr{
 }
 
 
-@media only screen and (max-width: 500px) and (orientation: portrait) {
-  .b-text {
-      margin-top: -30px;
-      margin-left: 0px;
-      color: green;
-  }
-  .b2-text {
-      margin-top: -52px;
-      margin-left: -338px;
-      color: black;
-  }
-  .b3-text {
-      margin-top: -52px;
-      margin-left: -232px;
-      color: black;
-  }
-}
-
-
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .b-text {
       margin-top: -52px;
-      margin-left: -261px;
+      margin-left: -148px;
       color: black;
   }
   .b2-text {
       margin-top: -52px;
-      margin-left: -338px;
+      margin-left: -229px;
       color: black;
   }
   .b3-text {
       margin-top: -52px;
-      margin-left: -232px;
+      margin-left: -125px;
       color: black;
   }
 }
@@ -115,17 +96,17 @@ hr{
 @media (min-width: 576px) {
   .b-text {
       margin-top: -52px;
-      margin-left: -321px;
+      margin-left: -188px;
       color: black;
   }
   .b2-text {
       margin-top: -52px;
-      margin-left: -398px;
+      margin-left: -270px;
       color: black;
   }
   .b3-text {
       margin-top: -52px;
-      margin-left: -292px;
+      margin-left: -168px;
       color: black;
   }
 }
