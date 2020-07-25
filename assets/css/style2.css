@@ -59,17 +59,35 @@ hr{
 @media (max-width: 500px) {
   .b-text {
       margin-top: -52px;
-      margin-left: -148px;
+      margin-left: -255px;
       color: black;
   }
   .b2-text {
       margin-top: -52px;
-      margin-left: -229px;
+      margin-left: -333px;
       color: black;
   }
   .b3-text {
       margin-top: -52px;
-      margin-left: -125px;
+      margin-left: -224px;
+      color: black;
+  }
+}
+
+@media (max-width: 549px) {
+  .b-text {
+      margin-top: -52px;
+      margin-left: -304px;
+      color: black;
+  }
+  .b2-text {
+      margin-top: -52px;
+      margin-left: -381px;
+      color: black;
+  }
+  .b3-text {
+      margin-top: -52px;
+      margin-left: -276px;
       color: black;
   }
 }
@@ -96,17 +114,17 @@ hr{
 @media (min-width: 576px) {
   .b-text {
       margin-top: -52px;
-      margin-left: -188px;
+      margin-left: -319px;
       color: black;
   }
   .b2-text {
       margin-top: -52px;
-      margin-left: -270px;
+      margin-left: -396px;
       color: black;
   }
   .b3-text {
       margin-top: -52px;
-      margin-left: -168px;
+      margin-left: -289px;
       color: black;
   }
 }
