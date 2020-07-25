@@ -56,7 +56,7 @@ hr{
 }
 
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .b-text {
       margin-top: -52px;
       margin-left: -261px;
