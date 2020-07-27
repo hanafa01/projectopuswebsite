@@ -3,7 +3,11 @@
 }
 
 #main {
-    background: #004080;
+  background-color: #004080;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: 95% 201%;
+  background-position-y: 15%;
 }
 
 
@@ -48,14 +52,20 @@
     border: 0;
     border-top: 6px solid #fff;
     width: 200px;
+    line-height: 0.1;
+    line-height: 3;
 }
 
 .project {
     color: white;
+    font-size: 272%;
+    line-height: 0.2;
 }
 
 .dec  {
     color: white;
+    line-height: 3;
+    font-size: 91%;
 }
 
 .ex {
@@ -95,6 +105,124 @@
    padding-bottom: 50px;
 }
 
+
+
+
+@media (min-width: 576px) {
+
+    #main{
+      background-size: 101% 184%;
+background-position-y: 17%;
+background-position-x: 597%
+    }
+    .welcome{
+      width: 218px;
+    }
+
+    .bordr{
+      margin-left: -88px;
+      width: 258px;
+
+    }
+
+    .project{
+      font-weight: 700;
+font-size: 349%;
+line-height: 0.2
+    }
+
+    .dec{
+      line-height: 3;
+      font-size: 121%;
+
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+  #main{
+    background-size: 101% 190%;
+    background-position-y: 17%;
+    background-position-x: 162%
+  }
+  .welcome{
+    width: 233px;
+    margin-top: 50px
+  }
+
+  .bordr{
+    margin-left: -116px;
+    width: 425px;
+    margin-top: 76px;
+  }
+
+  .project{
+    font-weight: 700;
+    font-size: 439%;
+    line-height: 0.2;
+  }
+
+  .dec{
+    line-height: 3;
+    font-size: 227%;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .welcome{
+    width: 283px;
+    margin-top: 50px
+  }
+
+  .bordr{
+    margin-left: -188px;
+    width: 581px;
+    margin-top: 76px;
+  }
+
+  .project{
+    font-weight: 700;
+    font-size: 560%;
+    line-height: 0.2;
+  }
+
+  .dec{
+    line-height: 3;
+    font-size: 227%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #main{
+    background-size: 101% 190%;
+    background-position-y: 17%;
+    background-position-x: 162%
+  }
+  .welcome{
+    margin-right: 269px;
+  }
+
+  .bordr{
+    margin-left: -285px;
+    width: 800px;
+  }
+
+  .project{
+    font-weight: 700;
+    font-size: 690%;
+    line-height: 0.2;
+  }
+
+  .dec{
+    line-height: 3;
+    font-size: 232%;
+  }
+}
 
 
 
