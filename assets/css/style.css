@@ -225,6 +225,38 @@ line-height: 0.2
 }
 
 
+/* phones */
+@media (max-width: 549px){
+  #main{
+    background-size: 101% 190%;
+    background-position-y: 17%;
+    background-position-x: 162%
+  }
+  .welcome{
+    font-size: 116%;
+    margin-right: 40px;
+  }
+
+  .bordr{
+    margin-top: 13px;
+margin-left: -67px;
+/* padding-top: 24px; */
+width: 145px;
+  }
+
+  .project {
+    font-weight: 700;
+  font-size: 150%;
+  line-height: 0;
+  }
+
+  .dec{
+    line-height: 3;
+    font-size: 58%;
+  }
+}
+
+
 
 @media only screen and (max-width: 500px) {
 
