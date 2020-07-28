@@ -4,6 +4,9 @@
 
 #main {
   background-color: #004080;
+}
+
+.backg{
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: 95% 201%;
@@ -110,7 +113,7 @@
 
 @media (min-width: 576px) {
 
-    #main{
+    .backg{
       background-size: 101% 184%;
 background-position-y: 17%;
 background-position-x: 597%
@@ -142,7 +145,7 @@ line-height: 0.2
 
 @media (min-width: 768px) {
 
-  #main{
+  .backg{
     background-size: 101% 190%;
     background-position-y: 17%;
     background-position-x: 162%
@@ -198,7 +201,7 @@ line-height: 0.2
 }
 
 @media (min-width: 1200px) {
-  #main{
+  .backg{
     background-size: 101% 190%;
     background-position-y: 17%;
     background-position-x: 162%
@@ -227,7 +230,7 @@ line-height: 0.2
 
 /* phones */
 @media (max-width: 549px){
-  #main{
+  .backg{
     background-size: 101% 190%;
     background-position-y: 17%;
     background-position-x: 162%
@@ -274,3 +277,7 @@ width: 145px;
     }
 
 }
+
+
+
+/* page 28 */
