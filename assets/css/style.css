@@ -367,20 +367,24 @@ line-height: 0.2
 
   .bordr{
     margin-top: 13px;
-margin-left: -67px;
-/* padding-top: 24px; */
-width: 145px;
+    margin-left: -67px;
+    /* padding-top: 24px; */
+    width: 145px;
   }
 
   .project {
     font-weight: 700;
-  font-size: 150%;
-  line-height: 0;
+    font-size: 150%;
+    line-height: 0;
   }
 
   .dec{
     line-height: 3;
     font-size: 58%;
+  }
+
+  .modal-title {
+      margin-left: 43px;
   }
 }
 
