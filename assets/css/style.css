@@ -6,11 +6,22 @@
   background-color: #004080;
 }
 
+#mainorange {
+  background-color: #B27877;
+}
+
 .backg{
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   background-size: 95% 201%;
   background-position-y: 15%;
+}
+
+.backgorange{
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+  background-size: 95% 176%;
+  background-position-y: 26%;
 }
 
 
@@ -108,7 +119,121 @@
    padding-bottom: 50px;
 }
 
+.round {
+    border: 1px solid;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: initial;
+}
+.round:hover {
+    border: 1px solid;
+    border-radius: 50px;
+    margin-left: 10px;
+    background-color: initial;
+}
 
+
+.modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    text-align: center;
+    border-bottom: 0px solid #e9ecef;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    margin-left: 107px;
+    font-size: 30px;
+}
+
+.l-dec {
+    margin-left: 128px;
+    margin-top: -20px;
+}
+
+.form-control {
+    display: block;
+    width: 65%;
+    padding: 0.675rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: 1.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.b-text {
+    margin-top: -61px;
+    margin-left: -177px;
+    color: black;
+}
+
+.b-text span{
+  background-color: white;
+}
+
+#pass {
+    margin-top: 73px;
+}
+
+#pass span{
+  background-color: white;
+}
+
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    padding: 2rem;
+    border-top: 0px solid #e9ecef;
+}
+.up {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+
+
+.line{
+  border: 1px solid white
+}
+
+
+.fixwithsize{
+  font-size: 50px;
+      padding-bottom: 21px;
+      padding-top: 69px;
+}
+
+.textsizeprovate{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.fix2{
+padding-bottom: 105px;
+}
 
 
 @media (min-width: 576px) {
