@@ -84,7 +84,8 @@
 
 .ex {
     background-color: initial;
-    border: 1px solid;
+    border: 1px solid white;
+    color: white;
     border-radius: 50px;
 }
 
@@ -132,7 +133,6 @@
     background-color: initial;
 }
 
-
 .modal-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176,6 +176,10 @@
   background-color: white;
 }
 
+.lg{
+  border-radius: 50px;
+}
+
 .modal-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,26 +199,22 @@
 }
 
 
-
-
 .line{
-  border: 1px solid white
+  border: 1px solid white;
 }
 
 
 .fixwithsize{
-  font-size: 50px;
-      padding-bottom: 21px;
-      padding-top: 69px;
+  padding-bottom: 21px;
+  padding-top: 69px;
 }
 
 .textsizeprovate{
-  font-size: 30px;
   font-weight: 500;
 }
 
 .fix2{
-padding-bottom: 105px;
+  padding-bottom: 105px;
 }
 
 
@@ -244,6 +244,14 @@ padding-bottom: 105px;
     .dec{
       line-height: 3;
       font-size: 121%;
+    }
+
+    .fixwithsize{
+      font-size: 50px;
+    }
+
+    .textsizeprovate{
+      font-size: 30px;
     }
 
     .modal-title {
@@ -380,6 +388,19 @@ padding-bottom: 105px;
     line-height: 3;
     font-size: 58%;
   }
+
+  .fixwithsize{
+    font-size: 17px;
+  }
+
+  .textsizeprovate {
+    font-size: 11px;
+  }
+
+  .exploretext{
+    font-size: 22px;
+  }
+
   .modal-title {
       margin-bottom: 0;
       line-height: 1.5;
