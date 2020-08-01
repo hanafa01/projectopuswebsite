@@ -35,7 +35,7 @@
               <a class="nav-link " href="#">SUPPORT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link round" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">LOGIN</a>
+              <a class="nav-link round" href="#" data-toggle="modal" data-target="#modalLogin" data-whatever="@mdo">LOGIN</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
@@ -120,7 +120,7 @@
               <a href="#" class="text-danger">Terms and Conditions</a>
             </li>
             <li>
-              <a href="#" class="text-danger">Contact</a>
+              <a href="page242.html" class="text-danger">Contact</a>
             </li>
           </ul>
         </div>
@@ -130,29 +130,28 @@
   <!-- Footer -->
 
 
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- MODAL LOGIN -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">HELLO AGAIN!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+      <h5 class="modal-title text-center">HELLO AGAIN!</h5>
       <p class="l-dec"> Plug In Information To Proceed</p>
-
-
       <div class="modal-body">
         <form>
           <center>
            <div class="form-group">
-            <input type="text" class="form-control" id="recipient-name" placeholder="Type here user name">
+            <input type="text" class="form-control formStyle" id="username" placeholder="Type here user name">
             <p class="b-text"><span>Username</span></p>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="pass" placeholder="Type here Password">
+            <input type="text" class="form-control formStyle" id="pass" placeholder="Type here Password">
             <p class="b-text"><span>Password</span></p>
+            <i class="eye fa fa-eye"></i>
           </div>
           <p class="pt-4">Forgot Password ? <a href=""><u>Reset Password</u></a></p>
         </center>
@@ -162,11 +161,98 @@
       <center> <button type="button" class="btn btn-primary pl-4 pr-4 lg">Log In</button> </center>
       </div>
 
-      <div class="up text-center"> Not A Member Already ? <a href=""><u>Signup</u></a></div>
-
+      <div class="up text-center"> Not A Member Already ? <a data-toggle="modal" href="#modalSignup1"><u>Signup</u></a></div>
     </div>
   </div>
 </div>
+<!-- END MODAL LOGIN -->
+
+
+<!-- MODAL SIGN UP 1 -->
+<div class="modal fade" id="modalSignup1" data-backdrop="static"  tabindex="-1" role="dialog" aria-labelledby="modalSignup1" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <h5 class="modal-title text-center">WHAT ARE YOU?</h5>
+      <form>
+        <center>
+         <div class="up form-group">
+           <select class="form-control formStyle" id="value">
+             <option disabled selected>Select Issuer Type</option>
+             <option value="individual" data-toggle="modal">Individual</option>
+             <option value="comapny">Company/Firm</option>
+           </select>
+          <p class="b1-text"><span>Issuer Type</span></p>
+        </div>
+      </center>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END MODAL SIGN UP <1></1> -->
+
+
+<!-- MODAL SIGN UP 2 -->
+<div class="modal fade" id="modalSignup2" data-backdrop="static"  tabindex="-1" role="dialog" aria-labelledby="modalSignup2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <h5 class="modal-title text-center">JOIN PROVATE!</h5>
+      <p class="l-dec"> Plug In Information To Proceed</p>
+      <div class="modal-body">
+        <form>
+          <center>
+            <div class="form-group">
+             <input type="text" class="form-control formStyle bg-light" id="issuerType" placeholder="Individual" disabled>
+             <p class="b-text"><span>Issuer Type</span></p>
+           </div>
+           <div class="form-group">
+            <input type="text" class="form-control formStyle" id="fname" placeholder="Type here your first name">
+            <p class="b-text"><span>First Name</span></p>
+           </div>
+            <div class="form-group">
+             <input type="text" class="form-control formStyle" id="mname" placeholder="Type here your middle name">
+             <p class="b-text"><span>Middle Name</span></p>
+            </div>
+            <div class="form-group">
+             <input type="text" class="form-control formStyle" id="lname" placeholder="Type here your last name">
+             <p class="b-text"><span>Last Name</span></p>
+            </div>
+            <div class="form-group">
+             <input type="date" class="form-control formStyle" id="birth" placeholder="MM - DD - YYYY">
+             <p class="b-text"><span>Date Of Birth</span></p>
+            </div>
+            <div class="form-group">
+             <input type="date" class="form-control formStyle" id="location" placeholder="Type here your location">
+             <p class="b-text"><span>Location</span></p>
+            </div>
+            <div class="form-group">
+             <input type="date" class="form-control formStyle" id="nationality" placeholder="Type here your Nationality">
+             <p class="b-text"><span>Nationality</span></p>
+            </div>
+            <div class="form-group">
+             <input type="date" class="form-control formStyle" id="officialID" placeholder="Type here your official ID">
+             <p class="b-text"><span>Official ID</span></p>
+            </div>
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL SIGN UP 1 -->
+
+
 
 
   <!-- Optional JavaScript -->
@@ -174,6 +260,26 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+  $("#modalSignup1").on('show.bs.modal', function (e) {
+    $("#modalLogin").modal("hide");
+  });
+
+  $("#value").change(function(){
+
+  		if ( $(this).val() == "individual" ) {
+        $('#value').attr("data-toggle", "modal");
+
+      //  alert($("#value").data('toggle'));
+        $("#modalSignup1").hide();
+          $('#modalSignup2').modal('show');
+
+      }else {
+        alert("no");
+      }
+  });
+  </script>
 </body>
 
 </html>

@@ -143,14 +143,14 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 2rem;
+    /* padding: 2rem; */
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem;
     text-align: center;
     border-bottom: 0px solid #e9ecef;
 }
 
-.form-control {
+.formStyle {
     display: block;
     width: 65%;
     padding: 0.675rem .75rem;
@@ -162,7 +162,10 @@
     border: 1px solid black;
     border-radius: 1.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-top: 4px;
+    margin-top: 50px;
 }
+
 
 .b-text span{
   background-color: white;
@@ -180,6 +183,10 @@
   border-radius: 50px;
 }
 
+#fname,#mname,#lname,#birth,#location,#nationality,#officialID {
+    margin-top: 60px;
+}
+
 .modal-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -193,9 +200,20 @@
     padding: 2rem;
     border-top: 0px solid #e9ecef;
 }
+
+
+.b1-text span{
+  background-color: white;
+}
+
+
 .up {
     padding-top: 30px;
     padding-bottom: 50px;
+}
+
+.up3 {
+    padding-bottom: 230px;
 }
 
 
@@ -217,6 +235,64 @@
   padding-bottom: 105px;
 }
 
+
+
+.formStyle2 {
+  display: block;
+  /* padding: 0.675rem .75rem; */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding-top: 4px;
+}
+
+.b3-text span, .email-text span, .feedback-text  span, .type-text span{
+  background-color: white;
+}
+
+.up2 {
+    padding-top: 40px;
+}
+
+
+.up3 button{
+  border-radius: 50px;
+}
+
+
+@media (min-width: 550px) {
+  .b3-text{
+    margin-top: -49px;
+    margin-left: -142px;
+    color: black;
+  }
+
+  .email-text{
+    margin-top: -49px;
+    margin-left: -175px;
+    color: black;
+  }
+
+  .feedback-text{
+    margin-top: -218px;
+    margin-left: -142px;
+    color: black;
+  }
+
+  .formStyle2{
+    width: 50%;
+  }
+  .type-text{
+    margin-top: -52px;
+    margin-left: -143px;
+    color: black;
+  }
+}
 
 @media (min-width: 576px) {
 
@@ -255,10 +331,10 @@
     }
 
     .modal-title {
-        margin-bottom: 0;
-        line-height: 1.5;
-        margin-left: 107px;
-        font-size: 30px;
+      margin-bottom: 0;
+      margin-top: -39px;
+      line-height: 2.5;
+      font-size: 30px;
     }
 
     .l-dec {
@@ -267,10 +343,53 @@
     }
 
     .b-text {
-        margin-top: -61px;
+        margin-top: -56px;
         margin-left: -177px;
         color: black;
     }
+
+    .b1-text {
+        margin-top: -52px;
+        margin-left: -177px;
+        color: black;
+    }
+
+    .field-icon{
+      float: right;
+      margin-left: -25px;
+      margin-top: -25px;
+      position: relative;
+      z-index: 2;
+    }
+
+
+    .b3-text{
+      margin-top: -49px;
+      margin-left: -142px;
+      color: black;
+    }
+
+    .feedback-text{
+      margin-top: -218px;
+      margin-left: -142px;
+      color: black;
+    }
+
+    .formStyle2{
+      width: 50%;
+    }
+
+    .email-text{
+      margin-top: -49px;
+      margin-left: -173px;
+      color: black;
+    }
+    .type-text{
+      margin-top: -52px;
+      margin-left: -144px;
+      color: black;
+    }
+
 
 }
 
@@ -303,6 +422,32 @@
     font-size: 227%;
   }
 
+  .b3-text{
+    margin-top: -49px;
+    margin-left: -140px;
+    color: black;
+  }
+
+  .formStyle2{
+        width: 36%;
+  }
+
+  .feedback-text{
+    margin-top: -218px;
+    margin-left: -136px;
+    color: black;
+  }
+
+  .email-text{
+    margin-top: -49px;
+    margin-left: -173px;
+    color: black;
+  }
+  .type-text{
+    margin-top: -52px;
+    margin-left: -142px;
+    color: black;
+  }
 }
 
 @media (min-width: 992px) {
@@ -329,6 +474,33 @@
     font-size: 227%;
   }
 
+  .b3-text{
+    margin-top: -49px;
+    margin-left: -145px;
+    color: black;
+  }
+
+  .formStyle2{
+    width: 28%;
+  }
+
+  .feedback-text{
+    margin-top: -218px;
+    margin-left: -146px;
+    color: black;
+  }
+
+  .email-text{
+    margin-top: -49px;
+    margin-left: -173px;
+    color: black;
+  }
+
+  .type-text{
+    margin-top: -52px;
+    margin-left: -145px;
+    color: black;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -355,6 +527,33 @@
   .dec{
     line-height: 3;
     font-size: 232%;
+  }
+
+  .b3-text{
+    margin-top: -49px;
+    margin-left: -134px;
+    color: black;
+  }
+
+  .formStyle2{
+    width: 23%;
+  }
+  .feedback-text{
+    margin-top: -218px;
+    margin-left: -144px;
+    color: black;
+  }
+
+  .email-text{
+    margin-top: -49px;
+    margin-left: -173px;
+    color: black;
+  }
+
+  .type-text{
+    margin-top: -52px;
+    margin-left: -140px;
+    color: black;
   }
 }
 
@@ -403,13 +602,12 @@
 
   .modal-title {
       margin-bottom: 0;
-      line-height: 1.5;
-      margin-left: 43px;
+      line-height: 2.5;
   }
 
   .l-dec {
     margin-left: 64px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 
   .b-text {
@@ -417,11 +615,46 @@
     margin-left: -88px;
     color: black;
   }
+
+  .b1-text {
+      margin-top: -52px;
+      margin-left: -95px;
+      color: black;
+  }
+
+  .b3-text{
+    margin-top: -49px;
+    margin-left: -112px;
+    color: black;
+  }
+
+  .formStyle2{
+    width: 65%;
+  }
+
+  .feedback-text{
+    margin-top: -218px;
+    margin-left: -112px;
+    color: black;
+  }
+
+  .email-text{
+    margin-top: -49px;
+    margin-left: -153px;
+    color: black;
+  }
+
+  .type-text{
+    margin-top: -52px;
+    margin-left: -123px;
+    color: black;
+  }
 }
 
 
 
 @media only screen and (max-width: 500px) {
+
 
     .lgthree-img {
         width: 148px;
