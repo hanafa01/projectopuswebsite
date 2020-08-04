@@ -10,6 +10,10 @@
   background-color: #B27877;
 }
 
+#mainorangedark{
+  background-color: #8A4243;
+}
+
 .backg {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
@@ -164,6 +168,10 @@
   margin-top: 50px;
 }
 
+.form-check{
+      width: 79%;
+}
+
 .formStylewithoutmargintop {
   display: block;
   width: 65%;
@@ -294,7 +302,7 @@
   padding-top: 4px;
 }
 
-.b3-text span, .email-text span, .feedback-text span, .type-text span, .b-username span, .b-password span {
+.b3-text span, .email-text span, .feedback-text span, .type-text span, .b-username span, .b-password span, .b-confirmPassword span, .b-email2 span {
   background-color: white;
 }
 
@@ -404,8 +412,66 @@
 
 #eye{
   margin-top: 50px;
+  color: black;
 }
 
+
+/* page 14 */
+
+  .bgmarronclair{
+    background: #B27877 !important;
+  }
+
+  .bgmarron{
+    background: #8A4243 !important;
+  }
+
+.jumb {
+    padding: 2rem 1rem !important;
+    margin-bottom: 2rem !important;
+    background-color:#fff !important;
+    border-radius: .3rem !important;
+}
+
+.pd
+	{
+		padding: 40px !important;
+	}
+	.pd_1{
+		padding: 40px !important;
+	}
+
+	.font{color:white;}
+
+	.button{border: solid 1px;
+    border-radius: 90px;
+    padding: 5px 8px 8px 13px;
+    color: white;}
+
+	.co{color:white;}
+
+	.hm{border: solid;
+    width: 1061px;
+    margin-top: 34px;}
+
+	.con{color:#B27877 ;}
+
+	.bb{border: solid 1px #9BA8B2;
+    width: 1045px;
+    margin-left: 155px;
+    margin-top: 26px;}
+
+@media only screen and (max-width: 992px) and (min-width: 300px) {
+	.fo{
+		font-size: 25px;
+		font-weight: bold;
+}
+.bb{border: solid 1px #9BA8B2;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 26px;}
+	}
+/*  */
 
 @media (min-width: 550px) {
   .small-select {
@@ -517,6 +583,20 @@
 margin-left: -187px;
     color: black;
   }
+
+  .b-confirmPassword {
+    margin-top: -55px;
+    margin-left: -120px;
+    color: black;
+  }
+
+
+    .b-email2 {
+      margin-top: -55px;
+          margin-left: -207px;
+      color: black;
+    }
+
 
   .b1-text {
     margin-top: -52px;
@@ -836,7 +916,7 @@ margin-left: -187px;
   }
 
   .b-text {
-    margin-top: -61px;
+    margin-top: -56px;
     margin-left: -88px;
     color: black;
   }
@@ -853,6 +933,17 @@ margin-left: -187px;
     color: black;
   }
 
+  .b-confirmPassword {
+    margin-top: -56px;
+margin-left: -32px;
+    color: black;
+  }
+
+  .b-email2 {
+    margin-top: -56px;
+      margin-left: -119px;
+    color: black;
+  }
 
   .b1-text {
     margin-top: -52px;

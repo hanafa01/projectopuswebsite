@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <section id="mainorange" class="backgorange">
+  <section id="mainorangedark" class="backgorange">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img class="site-logo" src="assets/img/logo.png"> </a>
@@ -74,7 +74,7 @@
     </div>
 
   </section>
-  <section id="mainorange" class="pt-1 pb-5">
+  <section id="mainorangedark" class="pt-1 pb-5">
     <div class="container">
       <hr class="line mb-5">
       <div class="row">
@@ -161,11 +161,6 @@
                 <p class="b-password"><span>Password</span></p>
               </div>
 
-              <!-- <div class="form-group">
-            <input type="text" class="form-control formStyle" id="pass" placeholder="Type here Password">
-            <p class="b-text"><span>Password</span></p>
-            <i class="eye fa fa-eye"></i>
-          </div> -->
               <p class="pt-4">Forgot Password ? <a href=""><u>Reset Password</u></a></p>
             </center>
           </form>
@@ -196,11 +191,15 @@
             <center>
               <div class="up form-group">
                 <select class="form-control formStyle" id="value">
-                  <option disabled selected>Select Issuer Type</option>
-                  <option value="individual" data-toggle="modal">Individual</option>
-                  <option value="company" data-toggle="modal">Company/Firm</option>
+                  <option disabled selected>Select Investor Type</option>
+                  <option value="wholesaler" data-toggle="modal">Wholesaler</option>
+                  <option value="" data-toggle="modal">Retailer</option>
+                  <option value="highnetworthindividual" data-toggle="modal">High Net Worth Individual</option>
+                  <option value="" data-toggle="modal">Investment Bank</option>
+                  <option value="" data-toggle="modal">Investment Fund</option>
+                  <option value="" data-toggle="modal">Trust Fund</option>
                 </select>
-                <p class="b1-text"><span>Issuer Type</span></p>
+                <p class="b1-text"><span>Investor Type</span></p>
               </div>
             </center>
           </form>
@@ -208,10 +207,10 @@
       </div>
     </div>
   </div>
-  <!-- END MODAL SIGN UP <1></1> -->
+  <!-- END MODAL SIGN UP 1 -->
 
 
-  <!-- MODAL SIGN UP 2 -->
+  <!-- MODAL SIGN UP 2 for  highnetworthindividual-->
   <div class="modal fade" id="modalSignup2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modalSignup2" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -227,19 +226,15 @@
             <center>
               <div class="form-group">
                 <div class="input-group inputgroup">
-                  <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="Individual" disabled>
+                  <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="High Net Worth Individual" disabled>
                   <div class="input-group-append">
                     <span class="input-group-text border-left-0 formStyleqsts">
                       <i class="fa fa-lock text-dark"></i>
                     </span>
                   </div>
                 </div>
-                <p class="b-text"><span>Issuer Type</span></p>
+                <p class="b-text"><span>Investor Type</span></p>
               </div>
-              <!-- <div class="form-group">
-                <input type="text" class="form-control formStylewithoutmargintop bg-light" id="issuerType" placeholder="Individual" disabled>
-                <p class="b-text"><span>Issuer Type</span></p>
-              </div> -->
               <div class="form-group">
                 <input type="text" class="form-control formStyle" id="fname" placeholder="Type here your first name">
                 <p class="b-text"><span>First Name</span></p>
@@ -299,14 +294,14 @@
             <center>
               <div class="form-group">
                 <div class="input-group inputgroup">
-                  <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="Individual" disabled>
+                  <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="High Net Worth Individual" disabled>
                   <div class="input-group-append">
                     <span class="input-group-text border-left-0 formStyleqsts">
                       <i class="fa fa-lock"></i>
                     </span>
                   </div>
                 </div>
-                <p class="b-text"><span>Issuer Type</span></p>
+                <p class="b-text"><span>Investor Type</span></p>
               </div>
               <div class="form-group">
                 <input type="email" class="form-control formStyle" id="email" placeholder="Type here your email">
@@ -316,15 +311,7 @@
                 <input type="password" class="form-control formStyle" id="password" placeholder="Type here your password">
                 <p class="b-text"><span>Password</span></p>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control formStyle" id="confirmPassword" placeholder="Type here your password">
-                <p class="b-confirmPassword"><span>Confirm Password</span></p>
-              </div>
-              <div class="form-check up">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I have read the Projectopus's <u class="text-primary">Terms & Conditions</u> and agree to them</label>
-              </div>
-              <div class="">
+              <div class="up">
                 <center> <a data-toggle="modal" href="#registrationComplete" class="btn btn-primary pl-4 pr-4 lg">Register</a></center>
               </div>
               <div class="up">
@@ -342,8 +329,8 @@
 
 
 
-    <!-- MODAL Company -->
-    <div class="modal fade" id="modalCompany" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modalCompany" aria-hidden="true">
+    <!-- MODAL wholesaler -->
+    <div class="modal fade" id="modalWholeSaler" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="modalWholeSaler" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -358,14 +345,14 @@
               <center>
                 <div class="form-group">
                   <div class="input-group inputgroup">
-                    <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="Company" disabled>
+                    <input type="text" class="border-right-0 form-control formStylewithoutmargintop bg-transparent bg-light" placeholder="Wholesaler" disabled>
                     <div class="input-group-append">
                       <span class="input-group-text border-left-0 formStyleqsts">
                         <i class="fa fa-lock"></i>
                       </span>
                     </div>
                   </div>
-                  <p class="b-text"><span>Issuer Type</span></p>
+                  <p class="b-text"><span>Investor Type</span></p>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control formStyle" id="firm" placeholder="Type here the name of the firm">
@@ -402,7 +389,7 @@
           </button>
         </div>
         <h5 class="modal-title text-center">THANK YOU!</h5>
-        <div class="modal-body">
+        <div class="modal-body up">
           <center>
             <img src="assets/img/page21/registrationcomplete.png" width="230px" alt="">
             <p class="pt-3"><b>Thank You For Registering</b></p>
@@ -431,7 +418,7 @@
 
     $("#value").change(function() {
 
-      if ($(this).val() == "individual") {
+      if ($(this).val() == "highnetworthindividual") {
         $('#value').attr("data-toggle", "modal");
         $('select').prop('selectedIndex', 0);
         $('#modalSignup1').modal('hide')
@@ -439,36 +426,38 @@
           $('#modalSignup2').modal('show')
         });
 
-        $("#modalSignup3").on('show.bs.modal', function() {
-          $("#modalSignup2").modal("hide");
-        });
 
-        $("#modalSignup2").on('show.bs.modal', function() {
-          $("#modalSignup3").modal("hide");
-        });
-
-        // $('#modalSignup3').on('hidden.bs.modal', function() {
-        //   $('#modalSignup2').modal('show');
-        // });
-
-        $("#registrationComplete").on('show.bs.modal', function() {
-          $("#modalSignup3").modal("hide");
-        });
-      } else if($(this).val() == "company"){
+      } else if($(this).val() == "wholesaler"){
         $('#value').attr("data-toggle", "modal");
 
         $('select').prop('selectedIndex', 0);
         $('#modalSignup1').modal('hide');
         $('#modalSignup1').on('hidden.bs.modal', function() {
-          $('#modalCompany').modal('show');
+          $('#modalWholeSaler').modal('show');
         });
 
         $("#registrationComplete").on('show.bs.modal', function() {
-          $("#modalCompany").modal("hide");
+          $("#modalWholeSaler").modal("hide");
         });
       }
     });
 
+
+    $("#modalSignup3").on('show.bs.modal', function() {
+      $("#modalSignup2").modal("hide");
+    });
+
+    $("#modalSignup2").on('show.bs.modal', function() {
+      $("#modalSignup3").modal("hide");
+    });
+
+    // $('#modalSignup3').on('hidden.bs.modal', function() {
+    //   $('#modalSignup2').modal('show');
+    // });
+
+    $("#registrationComplete").on('show.bs.modal', function() {
+      $("#modalSignup3").modal("hide");
+    });
   </script>
 </body>
 
