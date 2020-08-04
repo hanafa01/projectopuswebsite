@@ -164,6 +164,21 @@
   margin-top: 50px;
 }
 
+.formStylewithoutmargintop {
+  display: block;
+  width: 65%;
+  padding: 0.675rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  padding-top: 4px;
+}
+
 .formStyleqsts {
   display: block;
   width: 100%;
@@ -184,13 +199,16 @@
   width: 100%;
   font-size: 1rem;
   line-height: 1.5;
-  color: #550015;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid black;
   border-radius: 1.25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   padding-top: 4px;
+}
+
+.searchwithnocolor{
+  padding-top: 5px;
 }
 
 .search {
@@ -276,7 +294,7 @@
   padding-top: 4px;
 }
 
-.b3-text span, .email-text span, .feedback-text span, .type-text span {
+.b3-text span, .email-text span, .feedback-text span, .type-text span, .b-username span, .b-password span {
   background-color: white;
 }
 
@@ -357,6 +375,37 @@
   width: 200px;
   height: 150px;
 }
+
+#bigSquare{
+  border: 2px solid black;
+  padding: 20px;
+  width: 800px;
+  height: 500px;
+}
+
+.inputgroup{
+  width: 65%;
+}
+
+.formStylewithicon{
+  display: block;
+  padding: 0.675rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  padding-top: 4px;
+  margin-top: 50px;
+}
+
+#eye{
+  margin-top: 50px;
+}
+
 
 @media (min-width: 550px) {
   .small-select {
@@ -454,6 +503,18 @@
   .b-text {
     margin-top: -56px;
     margin-left: -177px;
+    color: black;
+  }
+
+  .b-username{
+    margin-top: -56px;
+    margin-left: -177px;
+    color: black;
+  }
+
+  .b-password {
+    margin-top: -70px;
+margin-left: -187px;
     color: black;
   }
 
@@ -779,6 +840,19 @@
     margin-left: -88px;
     color: black;
   }
+
+  .b-username {
+    margin-top: -55px;
+    margin-left: -88px;
+    color: black;
+  }
+
+  .b-password {
+    margin-top: -70px;
+  margin-left: -96px;
+    color: black;
+  }
+
 
   .b1-text {
     margin-top: -52px;
