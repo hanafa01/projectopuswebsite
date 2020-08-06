@@ -1,0 +1,365 @@
+
+
+
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=devanagari,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+/*********** Steps Start***************/
+.horizontal-tabs-steps {
+  position: relative;
+}
+
+.horizontal-tabs-steps .nav-item {
+  z-index: 1;
+  position: relative;
+}
+
+.horizontal-tabs-steps .nav-item:after {
+      content: "";
+    border-top: 5px solid #73b6ff;
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    width: 271px;
+    left: 0px;
+    transition: border 1s ease-out;
+    transition-delay: 0s, 0s, 0.1s;
+}
+
+.horizontal-tabs-steps .nav-item:last-child:after {
+  content: "";
+  border-top: 0px dotted #4da3ff;
+}
+
+.horizontal-tabs-steps .nav-item.complete-step:after {
+  content: "";
+  border-top: 5px dotted #4d7ed2;
+  position: absolute;
+  z-index: 0;
+  top: 12px;
+  width: 265px;
+  left: 0px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s
+}
+
+.horizontal-tabs-steps .nav-link {
+     background: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: #3c4858;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 2px solid #4d7ed2;
+    z-index: 1;
+    position: relative;
+}
+
+.horizontal-tabs-steps .nav-link:hover {
+  background: #22437c;
+  border: 2px solid #22437c;
+  color: #fff !important;
+  transition: 0.3s all;
+}
+
+.horizontal-tabs-steps .nav-link:hover .horizontal-tabs-steps .nav-link span {
+  color: #fff !important;
+}
+
+.horizontal-tabs-steps .nav-item h6 {
+  font-size: 12px;
+}
+
+.horizontal-tabs-steps .nav-item.show .nav-link, .horizontal-tabs-steps .nav-link.active {
+     color: #fff;
+    background-color: #22437c;
+    border-color: #22437c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.horizontal-tabs-steps .nav-link.active span {
+  color: #fff;
+  font-weight: 500 !important;
+}
+
+.horizontal-tabs-steps .checked-steps span {
+  display: none;
+}
+
+.horizontal-tabs-steps .checked-steps {
+  background-color: #22437c !important;
+  border: 1px solid #22437c !important;
+  color: #fff !important;
+}
+
+.horizontal-tabs-steps .checked-steps:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #fff;
+}
+
+/*********** Steps End***************/
+
+/*********** Platform Content start***************/
+.platform-content .tab-pane h3 {
+  font-size: 15px;
+  font-weight: 500 !important;
+}
+
+.platform-content .tab-pane p {
+  font-size: 12px;
+}
+
+.vertical-tabs-steps.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #22437c;
+  border-color: #22437c;
+  font-size: 12px !important;
+}
+
+.vertical-tabs-steps .nav-link {
+  color: #3c4858;
+  border: 1px solid #4d7ed2;
+  font-size: 12px !important;
+  margin-bottom: 45px;
+  border-radius: 15px 15px 0px 15px;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  width: 80px;
+}
+
+.vertical-tabs-steps .nav-link.checked-steps {
+  text-align: left;
+}
+
+.vertical-tabs-steps .nav-link:hover {
+  color: #fff;
+  background-color: #22437c !important;
+  border-color: #22437c;
+  transition: 0.3s all;
+}
+
+.vertical-tabs-steps .nav-item {
+  position: relative;
+}
+
+.vertical-tabs-steps .nav-item:last-child:after {
+  content: "";
+  border-bottom: 0px !important;
+}
+
+.vertical-tabs-steps .nav-item:after {
+  content: "";
+  border-bottom: 3px dotted #73b6ff;
+  position: absolute;
+  width: 95px;
+  transform: rotate(90deg);
+  z-index: 0;
+  left: -10px;
+  top: 50px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
+}
+
+.vertical-tabs-content {
+  padding: 0px 15px;
+}
+
+.vertical-tabs-content p {
+  font-size: 12px;
+}
+
+.vertical-tabs-steps .checked-steps {
+  background-color: #22437c !important;
+  border: 1px solid #22437c !important;
+  color: #fff !important;
+}
+
+.vertical-tabs-steps .checked-steps:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+}
+
+.vertical-tabs-content .tab-pane h3 {
+  font-size: 15px;
+  font-weight: 500 !important;
+}
+
+.vertical-tabs-steps .checked-border-item.nav-item:after {
+  content: "";
+  border-bottom: 0px dotted #ccc !important;
+  position: absolute;
+  width: 95px;
+  transform: rotate(90deg);
+  z-index: 0;
+  left: -10px;
+  top: 50px;
+  transition: border 1s ease-out;
+  transition-delay: 0s, 0s, 0.1s;
+}
+
+.vertical-tabs-steps .nav-item.complete-step:after {
+  content: "";
+  border-bottom: 3px dotted #4d7ed2 !important;
+  position: absolute;
+  width: 95px;
+  transform: rotate(90deg);
+  z-index: 0;
+  left: -10px;
+  top: 50px;
+}
+
+
+/*********** Platform Content End***************/
+
+
+/*********** Responsive CSS Start***************/
+
+@media only screen and (max-width: 575px) {
+  .vertical-tabs-steps .nav-link {
+    width: 73px;
+  }
+
+  .vertical-tabs-steps .nav-link.checked-steps {
+    padding: 10px 7px;
+  }
+
+  .vertical-tabs-steps .checked-steps:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    color: #fff;
+    position: absolute;
+    right: 7px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 219px;
+  }
+  .vertical-tabs-steps.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #22437c;
+    border-color: #22437c;
+    font-size: 36px !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 160px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 115px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    width: 95px;
+  }
+
+  .horizontal-tabs-steps .nav-item:after {
+    content: "";
+    border-top: 5px solid #73b6ff;
+    position: absolute;
+    z-index: 0;
+    top: 27px;
+    width: 123px;
+    left: 0px;
+    transition: border 1s ease-out;
+    transition-delay: 0s, 0s, 0.1s;
+}
+.horizontal-tabs-steps .nav-link {
+    background: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #3c4858;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 2px solid #4d7ed2;
+    z-index: 1;
+    position: relative;
+}
+ul.nav.nav-tabs.justify-content-between.border-0.horizontal-tabs-steps i {
+    font-size: 22px;
+}
+.horizontal-tabs-steps .nav-link.active {
+    color: #fff;
+    background-color: #22437c;
+    border-color: #22437c;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+}
+/*********** Responsive CSS End***************/
+</style>
+<div class="container">
+    <!---------------Platform Tour----------------->
+    <div class="platform-tour-wrapper py-3">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs justify-content-between border-0 horizontal-tabs-steps">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#step1"><span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+          </a>
+          <h6 class="text-center mt-1">Step 1</h6>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#step2"><span>2</span></a>
+          <h6 class="text-center mt-1">Step 2</h6>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#step3"><span>3</span></a>
+          <h6 class="text-center mt-1">Step 3</h6>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#step4"><span>4</span></a>
+          <h6 class="text-center mt-1">Step 4</h6>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#step5"><span>5</span></a>
+          <h6 class="text-center mt-1">Step 5</h6>
+        </li>
+      </ul>
+	  </div>
+	  </div>

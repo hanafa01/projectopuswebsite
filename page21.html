@@ -149,6 +149,14 @@
                 <input type="text" class="form-control formStyle" id="username" placeholder="Type here user name">
                 <p class="b-username"><span>Username</span></p>
               </div>
+              <!-- <div class="form-group">
+                <input type="text" class="form-control formStyle" id="username" placeholder="Type here user name">
+                <p class="b-username"><span>Username </span></p><span><i class="fa fa-eye" style="margin-top: -15px;
+    float: right;
+    /* margin-left: 214px; */
+    margin-right: 100px;"></i></span>
+              </div> -->
+
               <div class="form-group">
                 <div class="input-group inputgroup mb-3">
                   <input type="password" class="border-right-0 form-control formStylewithicon bg-transparent" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
@@ -328,7 +336,7 @@
                 <center> <a data-toggle="modal" href="#registrationComplete" class="btn btn-primary pl-4 pr-4 lg">Register</a></center>
               </div>
               <div class="up">
-                <a data-toggle="modal" href="#modalSignup3"><i class="fa fa-arrow-left text-muted"></i></a>
+                <a data-toggle="modal" href="#modalSignup2"><i class="fa fa-arrow-left text-muted"></i></a>
                 <i class="fa fa-circle-thin text-muted"></i>
                 <i class="fa fa-circle text-muted"></i>
               </div>
@@ -439,21 +447,7 @@
           $('#modalSignup2').modal('show')
         });
 
-        $("#modalSignup3").on('show.bs.modal', function() {
-          $("#modalSignup2").modal("hide");
-        });
 
-        $("#modalSignup2").on('show.bs.modal', function() {
-          $("#modalSignup3").modal("hide");
-        });
-
-        // $('#modalSignup3').on('hidden.bs.modal', function() {
-        //   $('#modalSignup2').modal('show');
-        // });
-
-        $("#registrationComplete").on('show.bs.modal', function() {
-          $("#modalSignup3").modal("hide");
-        });
       } else if($(this).val() == "company"){
         $('#value').attr("data-toggle", "modal");
 
@@ -467,6 +461,22 @@
           $("#modalCompany").modal("hide");
         });
       }
+    });
+
+    $("#modalSignup3").on('show.bs.modal', function() {
+      $("#modalSignup2").modal("hide");
+    });
+
+    $("#modalSignup2").on('show.bs.modal', function() {
+      $("#modalSignup3").modal("hide");
+    });
+
+    // $('#modalSignup3').on('hidden.bs.modal', function() {
+    //   $('#modalSignup2').modal('show');
+    // });
+
+    $("#registrationComplete").on('show.bs.modal', function() {
+      $("#modalSignup3").modal("hide");
     });
 
   </script>
